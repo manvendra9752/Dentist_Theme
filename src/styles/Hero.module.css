@@ -1,0 +1,156 @@
+/* Container for the background image */
+.background {
+    background-image: url("../images/hero.png");
+    width: 100%;
+    height: 88vh;
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    text-align: center;
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    position: relative;
+}
+.contain h4 {
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 1200px) {
+    .contain h4 {
+        font-size: 2.5rem; /* Size for screens between 1200px and 1024px */
+    }
+}
+
+@media (max-width: 992px) {
+    .contain h4 {
+        font-size: 2rem; /* Size for screens between 992px and 768px */
+    }
+}
+
+@media (max-width: 768px) {
+    .contain h4 {
+        font-size: 1.75rem; /* Size for screens between 768px and 576px */
+    }
+}
+
+@media (max-width: 576px) {
+    .contain h4 {
+        font-size: 1.5rem; /* Size for screens below 576px */
+    }
+}
+
+/* Optional: Dark overlay for better text visibility */
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adjust the opacity of the overlay */
+    z-index: 1;
+    pointer-events: none; /* Ensures clicks go through to elements below */
+}
+
+/* Styling for the text and content */
+.displayText {
+    width: 100%;
+    max-width: 50%;
+    height: 85%;
+    opacity: 1;
+    background-color: var(--formbackground-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(1.8px); /* Adjust the blur value as needed */
+    -webkit-backdrop-filter: blur(1.8px); /* For Safari */
+    margin-left: auto; /* Push to the right side */
+}
+
+/* Styling for buttons */
+.background button {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+/* Container for text content */
+.contain {
+    width: 90%;
+    max-width: 620px;
+    height: fit-content;
+    font-family: Playfair Display;
+font-weight: 900;
+
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1124px) {
+    .background {
+        height: 35vh;
+    }
+
+  
+}
+
+@media (max-width: 950px) {
+    .background {
+        height: 36vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .background {
+        height: 35vh;
+        /* Adjusting align-items to center for smaller screens if needed */
+        justify-content: center;
+    }
+
+    .background button {
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .background {
+        height: 34vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .background {
+        height:26vh;
+    }
+
+    .background button {
+        padding: 4px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 344px) {
+    .background {
+        height: 25vh;
+    }
+}
