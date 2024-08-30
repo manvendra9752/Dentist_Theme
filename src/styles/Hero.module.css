@@ -1,156 +1,157 @@
-/* Container for the background image */
-.background {
-    background-image: url("../images/hero.png");
-    width: 100%;
-    height: 88vh;
-    margin: auto;
-    max-width: 1300px;
-    display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center;
-    text-align: center;
-    background-size: cover; /* Ensures the image covers the container */
-    background-position: center;
-    background-repeat: no-repeat; /* Prevents tiling of the image */
-    position: relative;
-}
-.contain h4 {
+
+  .textdata h4 {
     font-size: 3rem;
-    font-family: "Playfair Display", serif;
-    font-weight: 900;
-
-}
-
-/* Responsive font size adjustments */
-@media (max-width: 1200px) {
-    .contain h4 {
-        font-size: 2.5rem; /* Size for screens between 1200px and 1024px */
-    }
-}
-
-@media (max-width: 992px) {
-    .contain h4 {
-        font-size: 2rem; /* Size for screens between 992px and 768px */
-    }
-}
-
-@media (max-width: 768px) {
-    .contain h4 {
-        font-size: 1.75rem; /* Size for screens between 768px and 576px */
-    }
-}
-
-@media (max-width: 576px) {
-    .contain h4 {
-        font-size: 1.5rem; /* Size for screens below 576px */
-    }
-}
-
-/* Optional: Dark overlay for better text visibility */
-.background::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3); /* Adjust the opacity of the overlay */
-    z-index: 1;
-    pointer-events: none; /* Ensures clicks go through to elements below */
-}
-
-/* Styling for the text and content */
-.displayText {
-    width: 100%;
-    max-width: 50%;
-    height: 85%;
-    opacity: 1;
-    background-color: var(--formbackground-color);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-weight: 800;
+  }
+  .textdata p {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .about {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    backdrop-filter: blur(1.8px); /* Adjust the blur value as needed */
-    -webkit-backdrop-filter: blur(1.8px); /* For Safari */
-    margin-left: auto; /* Push to the right side */
-}
+    flex-direction: row;
+    width: 95%;
+    height: fit-content;
+    max-width: 1300px;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
 
-/* Styling for buttons */
-.background button {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border: none;
-    padding: 10px;
-    margin: 10px;
+  .sub_content p {
+    line-height: 1.6;
+  }
+  .about_main {
+    width: 45%;
+    order: 2;
+    text-align: end;
+    /* max-height: 90%; */
+  }
+  
+  .textdata {
+    order: 1;
+    width: 50%;
+    height: fit-content;
+    padding: 1rem;
+    display: flex;
+    font-weight: 500;
+    /* margin-right: auto; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+  }
+  .greet {
+    padding: 4px 8px;
+    font-size: small;
+    border: 1px solid var(--primary-color);
     width: fit-content;
     height: fit-content;
-    font-size: 1.2rem;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-}
-
-/* Container for text content */
-.contain {
-    width: 90%;
-    max-width: 620px;
-    height: fit-content;
-    font-family: Playfair Display;
-font-weight: 900;
-
-}
-
-
-
-/* Responsive adjustments */
-@media (max-width: 1124px) {
-    .background {
-        height: 35vh;
-    }
-
+    color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem ;
+  }
+  .greet p {
+    margin: auto;
+  }
+  .about_main img {
+    /* height: fit-content; */
+    width: 80%;
+    margin-left: auto;
+  }
   
-}
-
-@media (max-width: 950px) {
-    .background {
-        height: 36vh;
+  /* Responsive adjustments */
+  @media (max-width: 1280px) {
+    /* No specific changes needed for this breakpoint */
+  }
+  
+  @media (max-width: 1024px) {
+    .about {
+      padding: 0.2rem;
     }
-}
-
-@media (max-width: 768px) {
-    .background {
-        height: 35vh;
-        /* Adjusting align-items to center for smaller screens if needed */
-        justify-content: center;
+  
+    .textdata h4 {
+      font-size: 2.5rem;
     }
-
-    .background button {
-        padding: 6px;
-        font-size: 0.9rem;
+    .about_main, .textdata {
+      width: 50%;
     }
-}
-
-@media (max-width: 550px) {
-    .background {
-        height: 34vh;
+  
+    .textdata {
+      text-align: start;
     }
-}
-
-@media (max-width: 480px) {
-    .background {
-        height:26vh;
+  
+    /* .about_main img {
+      width: 100%;
+    } */
+  }
+  
+  @media (max-width: 850px) {
+    .about {
+      padding: 1rem 0.2rem;
     }
-
-    .background button {
-        padding: 4px;
-        font-size: 0.8rem;
+ 
+    .textdata {
+      padding: 0.2rem;
     }
-}
-
-@media (max-width: 344px) {
-    .background {
-        height: 25vh;
+/*   
+    .about_main img {
+      width: 100%;
+    } */
+  }
+  
+  @media (max-width: 680px) {
+    .about {
+      flex-direction: column;
+      padding: 0.3rem 0;
+    }   .about_main {
+      order: 1;
     }
-}
+    .textdata {
+      order: 2;
+    }
+    .textdata h4{
+      font-size: 1.5rem;
+    }
+    .textdata {
+      padding: 0.1rem;
+    }
+  
+    .about_main {
+      width: 95%;
+      text-align: center;
+    }
+     .textdata {
+      width: 95%;
+      text-align: start;
+    }
+  
+  
+    .about_main img {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .textdata {
+      font-size: 1.2rem;
+    }
+  
+    .about {
+      width: 90%;
+      height: auto; /* Ensure height fits content */
+    }
+  
+    .about_main img {
+      width: 100%;
+    }
+  }
+  

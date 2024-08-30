@@ -1,33 +1,103 @@
-import React from 'react'
-import logo from "../images/logo.png"
-import { Link } from 'react-router-dom'
-// import styles from "../styles/Navbar1.module.css"
+import React, { useState, useEffect } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import logo from "../images/logo.png";
+import styles from "../styles/Navbar1.module.css";
+import { GrBlog } from "react-icons/gr";
+import { RiCustomerService2Line } from "react-icons/ri";
+import { IoInformationCircleOutline } from "react-icons/io5";
+import { RiContactsBook3Line } from "react-icons/ri";
+
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [activePage, setActivePage] = useState("");
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const getCurrentPage = () => {
+    const path = window.location.hash;
+    return path === "" ? "#home" : path;
+  };
+
+  useEffect(() => {
+    setActivePage(getCurrentPage());
+    window.addEventListener("hashchange", () => {
+      setActivePage(getCurrentPage());
+    });
+    return () => {
+      window.removeEventListener("hashchange", () => {
+        setActivePage(getCurrentPage());
+      });
+    };
+  }, []);
+
   return (
-    <div className={styles.Navbar}>
+    <div className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={logo} alt='logo'/>
-        <div className={styles.logo_content}><h4>Family Dental Care</h4> <p>Dentistry and Orthadontics</p></div>
+        <img src={logo} alt="logo" className={styles.logoImg} />
+        <div className={styles.logo_content}>
+          <h4>Family Dental Care</h4>
+          <p>Dentistry and Orthodontics</p>
+        </div>
       </div>
-      <div className={styles.main}>
-        <div className={styles.content}>
-          <Link><h3>About Us</h3></Link>
-        </div>
-        <div className={styles.content}>
-          <Link to="#"><h3>About Us</h3></Link>
-        </div>
-        <div className={styles.content}>
-        <Link to="#"><h3>About Us</h3></Link>
-        </div>
-        <div className={styles.content}>
-        <Link to="#"><h3>About Us</h3></Link>
-        </div>
-        <div className={styles.content}>
-          <Link to="#"><h3>Make an Appointment</h3></Link>
-        </div>
+      <div className={styles.menuToggle} onClick={toggleMenu}>
+        <GiHamburgerMenu className={styles.menuToggleIcon} />
+      </div>
+      <div className={`${styles.menuList} ${menuOpen ? styles.open : ""}`}>
+        <a
+          href="#about"
+          className={`${styles.menuItem} ${
+            activePage === "#about" ? styles.active : ""
+          }`}
+        >
+          {menuOpen ? (
+            <IoInformationCircleOutline className={styles.icon} style={{ color: "black" }} />
+          ) : (
+            ""
+          )}
+          About Us
+        </a>
+   
+        <a
+          href="#service"
+          className={`${styles.menuItem} ${
+            activePage === "#service" ? styles.active : ""
+          }`}
+        >
+          {menuOpen ? <RiCustomerService2Line className={styles.icon} /> : ""}
+          Service
+        </a>
+
+        <a
+          href="#blog"
+          className={`${styles.menuItem} ${
+            activePage === "#blog" ? styles.active : ""
+          }`}
+        >
+          {menuOpen ? <GrBlog className={styles.icon} /> : ""}Blog
+        </a>
+
+        <a
+          href="#contact"
+          className={`${styles.menuItem} ${
+            activePage === "#contact" ? styles.active : ""
+          }`}
+        >
+          {menuOpen ? <RiContactsBook3Line className={styles.icon} /> : ""}contact
+        </a>
+        <a
+          href="#makeappointment"
+          className={`${styles.menuItem} ${styles.contactItem}  ${
+            activePage === "#makeappointment" ? styles.active : ""
+          }`}
+        >
+        Make an appointment
+        </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
+
