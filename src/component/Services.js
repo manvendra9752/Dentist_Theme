@@ -1,6 +1,10 @@
 import React,{useRef} from 'react';
 import Slider from 'react-slick';
-import img1 from "../images/services2.png";
+import img1 from "../images/services.png";
+import img2 from "../images/services1.png";
+import img3 from "../images/services2.png";
+import img4 from "../images/gallery1.png";
+
 import styles from "../styles/Services.module.css";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
@@ -14,33 +18,33 @@ const main_para = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aen
 const content = [
   {
     id: 1,
-    heading: "Paediatric therapy",
+    heading: "Teeth Whitening",
     para: "Leverage years of expertise to offer top-notch services and solutions",
     image: teeth_1,
     img1: img1
   },
   {
     id: 2,
-    heading: "Nutrition & Diet",
+    heading: "Teeth Braces",
     para: "Leverage years of expertise to offer top-notch services and solutions",
     image: teeth_2,
-    img1: img1
+    img1: img2
 
   },
   {
     id: 3,
-    heading: "Years of Experience",
+    heading: "Teeth Checkup",
     para: "Leverage years of expertise to offer top-notch services and solutions.",
     image: teeth_3,
-    img1: img1
+    img1: img3
 
   },
   {
     id: 4,
-    heading: "Years of Experience",
+    heading: "Teeth Cleaning",
     para: "Leverage years of expertise to offer top-notch services and solutions.",
     image: teeth_1,
-    img1: img1
+    img1: img4
 
   },
 ];
@@ -52,17 +56,29 @@ const sliderSettings = {
   slidesToScroll: 1,
   autoplaySpeed: 3000,
   centerMode: true,
-  centerPadding: '0%',
+  centerPadding: '2%',
   responsive: [
    
     {
       breakpoint: 1200,
       settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 820,
+      settings: {
         slidesToShow: 2.5,
       }
     },
     {
-      breakpoint:  565,
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint:  430,
       settings: {
         slidesToShow: 1,
       }

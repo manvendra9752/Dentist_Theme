@@ -14,8 +14,8 @@ const Days = ({ day, time }) => {
           />
         </div>
         <div className={styles.day__name}>
-          <p className={styles.days__particularDay}>{day}</p>
-          <h5>{time}</h5>
+          <p  className={styles.days__particularDay}>{day}</p>
+          <h4>{time}</h4>
         </div>
       </div>
     </>

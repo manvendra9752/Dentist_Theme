@@ -13,8 +13,9 @@
 
 :root {
   --primary-color :#89DB7B;
-  --secondary-color : black;
+  --secondary-color : white;
   --accent-color :#1A46EF;
-  --background-color:rgba(50, 103, 255, 0.1);
+  /* --background-color:rgba(50, 103, 255, 0.1); */
   --footerbackgroud-color: #3267FF;
 }
+

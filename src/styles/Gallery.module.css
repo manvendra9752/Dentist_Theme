@@ -1,5 +1,6 @@
 .main__container {
   width: 100%;
+  margin: auto;
   max-width: 1300px;
   margin-bottom: 1.5rem;
 }
@@ -211,6 +212,8 @@
     padding: 2px;  width: 100%;
 
   }
+
+ 
 
 }
 

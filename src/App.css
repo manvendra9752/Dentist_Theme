@@ -1,12 +1,10 @@
-
-
 h1 {
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.5;
   margin: 0 auto;
-  text-align: start;
+  /* text-align: c; */
 }
 h3 {
 
@@ -57,3 +55,4 @@ p {
     font-size: 0.85rem;
   }
 }
+

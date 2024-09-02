@@ -4,7 +4,7 @@ import logo from "../images/logo.png";
 import styles from "../styles/Navbar1.module.css";
 import { GrBlog } from "react-icons/gr";
 import { RiCustomerService2Line } from "react-icons/ri";
-import { IoInformationCircleOutline } from "react-icons/io5";
+import { HiOutlineInformationCircle } from "react-icons/hi2";
 import { RiContactsBook3Line } from "react-icons/ri";
 
 const Navbar = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
           }`}
         >
           {menuOpen ? (
-            <IoInformationCircleOutline className={styles.icon} style={{ color: "black" }} />
+            <HiOutlineInformationCircle className={styles.icon} />
           ) : (
             ""
           )}
