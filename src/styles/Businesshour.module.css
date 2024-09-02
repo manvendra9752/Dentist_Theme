@@ -89,19 +89,40 @@
 .heading__container {
   width: 100%;
   text-align: center;
+  margin: auto;
 }
 .heading__container h3 {
   color: var(--primary-color);
-  /* border: 2px solid var(--primary-color); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem auto;
+  border: 1px solid var(--primary-color);
+  padding: 4px;
+  border-radius: 4px;
+  font-size: small;
+  width: fit-content;
+  height: fit-content;
+}
+
+/* .heading__container h3 {
+  color: var(--primary-color);
   width: fit-content;
   height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0.4rem auto;
-}
+  border: 1px solid var(--primary-color);
+  padding: 4px;
+  border-radius: 4px;
+  font-size: small;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+} */
 .heading__container p {
-  width: 45%;
+  width: 60%;
   margin: 0.4rem auto;
 }
 /*-------------------- business hours styling end------------------------*/
@@ -349,8 +370,8 @@
 }
 
 @media (max-width: 768px) {
-  .shadow__container{
-    margin: 10px 60px ;
+  .shadow__container {
+    margin: 10px 60px;
   }
   /* ----------------------business styling -------------------------- */
   .content {
@@ -418,19 +439,19 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-  
   }
-  .appointment__calendar{
+  .appointment__calendar {
     width: 100%;
   }
-  .appointment__hour,.appointment__date{
+  .appointment__hour,
+  .appointment__date {
     width: 90%;
     margin: auto;
   }
-  .appointment__btn__container{
+  .appointment__btn__container {
     width: 100%;
   }
-  .appointment__btn{
+  .appointment__btn {
     width: 90%;
     margin: auto;
   }
@@ -457,23 +478,22 @@
   .days__container {
     width: 100%;
   }
-  .shadow__container{
+  .shadow__container {
     margin: 10px 30px;
   }
-  .appointment__calendar__container{
+  .appointment__calendar__container {
     width: 100%;
     margin: 0%;
     padding: 0%;
-    
   }
-  .appointment__image{
+  .appointment__image {
     width: 100%;
   }
   .heading__container p {
     width: 80%;
     margin: 0.4rem auto;
   }
-  .appointment__calendar{
+  .appointment__calendar {
     justify-content: center;
   }
 }
@@ -497,14 +517,14 @@
   .days__container {
     width: 100%;
   }
-  .shadow__container{
+  .shadow__container {
     margin: 10px 30px;
   }
-  .appointment__calendar__container{
+  .appointment__calendar__container {
     width: 100%;
     margin-left: 0%;
   }
-  .appointment__image{
+  .appointment__image {
     width: 100%;
   }
   .heading__container p {

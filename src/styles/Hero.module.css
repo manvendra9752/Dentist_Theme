@@ -1,0 +1,157 @@
+
+  .textdata h4 {
+    font-size: 3rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-weight: 800;
+  }
+  .textdata p {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 95%;
+    height: fit-content;
+    max-width: 1300px;
+    margin: auto;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sub_content p {
+    line-height: 1.6;
+  }
+  .about_main {
+    width: 45%;
+    order: 2;
+    text-align: end;
+    /* max-height: 90%; */
+  }
+  
+  .textdata {
+    order: 1;
+    width: 50%;
+    height: fit-content;
+    padding: 1rem;
+    display: flex;
+    font-weight: 500;
+    /* margin-right: auto; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+  }
+  .greet {
+    padding: 4px 8px;
+    font-size: small;
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    height: fit-content;
+    color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem ;
+  }
+  .greet p {
+    margin: auto;
+  }
+  .about_main img {
+    /* height: fit-content; */
+    width: 80%;
+    margin-left: auto;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1280px) {
+    /* No specific changes needed for this breakpoint */
+  }
+  
+  @media (max-width: 1024px) {
+    .about {
+      padding: 0.2rem;
+    }
+  
+    .textdata h4 {
+      font-size: 2.5rem;
+    }
+    .about_main, .textdata {
+      width: 50%;
+    }
+  
+    .textdata {
+      text-align: start;
+    }
+  
+    /* .about_main img {
+      width: 100%;
+    } */
+  }
+  
+  @media (max-width: 850px) {
+    .about {
+      padding: 1rem 0.2rem;
+    }
+ 
+    .textdata {
+      padding: 0.2rem;
+    }
+/*   
+    .about_main img {
+      width: 100%;
+    } */
+  }
+  
+  @media (max-width: 680px) {
+    .about {
+      flex-direction: column;
+      padding: 0.3rem 0;
+    }   .about_main {
+      order: 1;
+    }
+    .textdata {
+      order: 2;
+    }
+    .textdata h4{
+      font-size: 1.5rem;
+    }
+    .textdata {
+      padding: 0.1rem;
+    }
+  
+    .about_main {
+      width: 95%;
+      text-align: center;
+    }
+     .textdata {
+      width: 95%;
+      text-align: start;
+    }
+  
+  
+    .about_main img {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .textdata {
+      font-size: 1.2rem;
+    }
+  
+    .about {
+      width: 90%;
+      height: auto; /* Ensure height fits content */
+    }
+  
+    .about_main img {
+      width: 100%;
+    }
+  }
+  

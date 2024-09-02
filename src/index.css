@@ -1,13 +1,21 @@
 *{
-  margin: 0px;
+  margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --primary-color :#89DB7B;
   --secondary-color : white;
-  /* --accent-color :#1A46EF; */
-  --background-color:rgba(50, 103, 255, 0.1);
+  --accent-color :#1A46EF;
+  /* --background-color:rgba(50, 103, 255, 0.1); */
   --footerbackgroud-color: #3267FF;
-  --formbackground-color :#F1F8FF80;
 }
+

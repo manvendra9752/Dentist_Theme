@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Container for services */
+.services {
+    width: 100%;
+    height: fit-content;
+    max-width: 1300px;
+    margin: auto;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+/* Styles for the slider container */
+.slider {
+    width: 100%;
+    position: relative;
+}
+
+.main_data {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+  }
+  
+  .main_data p {
+    /* font-size: large; */
+    margin: auto;
+    width: 60%;
+    text-align: center;
+  }
+  .main_data h3 {
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 4px;
+   border-radius: 4px;
+   font-size: small;
+  }
+  .main_data h1 {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+  }
+
+/* Styles for each slide */
+.services_1 {
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0.5rem;
+    border-radius: 5px;
+    height: auto;
+    padding: 0.5rem;
+}
+
+.services_1 img {
+    width: 100%;
+    height: 50%; /* Adjust height to fit the design */
+    object-fit: cover;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    /* position: relative; */
+}
+
+.services_1 .imgg {
+    position: relative;
+}
+
+.info{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0%;
+    font-size: small;
+    font-weight: 500;
+    text-transform: capitalize;
+
+    border-top-right-radius: 6px;
+    left: 0%;
+    background: white;
+    padding: 4px 1rem;
+    padding-bottom: 0%;
+    color: var(--accent-color);
+}
+/* Text styles within each slide */
+.services_1 h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    text-align: start;
+    font-weight: 700;
+    /* padding: 0 1rem; */
+}
+
+.services_1 p {
+    /* font-size: 15px; */
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: start;
+}
+
+/* Button styles */
+.button1 {
+    color: var(--text-color);
+    padding:  0.5rem 1rem;
+    margin: 0.5rem auto;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+}
+
+/* Separator line styling */
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 85%;
+    height: fit-content;
+    margin: auto;
+    align-items: center;
+}
+
+.liner {
+    flex: 1;
+    height: 2px;
+    padding-right: 4px;
+    border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .services_1 {
+        flex: 0 0 290px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services_1 {
+        flex: 0 0 270px;
+    }
+    .main_data p {
+        width: 80%;
+      }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .services_1 {
+        flex: 0 0 270px;
+    }
+
+    .services_1 h2 {
+        font-size: 1.2rem;
+    }
+
+    .button1 {
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .services {
+        padding: 0.2rem 0.5rem;
+    }
+
+    .services_1 {
+        flex: 0 0 80%;
+        margin: 0.5rem 0;
+    }
+
+    .services_1 h2 {
+        font-size: 1rem;
+    }
+    .main_data p {
+        width: 95%;
+      }
+    .button1 {
+        padding: 0.3rem 0.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .services_1 {
+        flex: 0 0 80%;
+    }
+}
