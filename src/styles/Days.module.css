@@ -46,7 +46,7 @@
     margin-top: 2.5%;
     width: 100%;
   }
-  .day__name p{
+  .day__name p {
     font-size: 1rem;
   }
   .day__name h4 {
@@ -57,7 +57,7 @@
 @media (max-width: 768px) {
   .days__content {
     width: 42%;
-    margin: 5px 0px;
+    margin: 10px 0px;
   }
 
   .days__logoCal {
@@ -67,6 +67,13 @@
 
   .days__name {
     font-size: 0.9rem;
+  }
+
+  .day__name p{
+    font-size: 1.2rem;
+  }
+  .day__name h4 {
+    font-size: 1rem;
   }
 }
 
@@ -88,6 +95,12 @@
   .days__name {
     font-size: 0.85rem;
     margin-top: 5px;
+  }
+  .day__name p{
+    font-size: 1rem;
+  }
+  .day__name h4 {
+    font-size: 0.8rem;
   }
 }
 

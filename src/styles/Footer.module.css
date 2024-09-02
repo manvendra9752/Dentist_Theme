@@ -104,8 +104,22 @@
     .footer__socialLogoConatiner img{
         width: 80%;
     }
+    .section1 h2, .section2 h2, .section3 h2{
+        font-size: 1.2rem ;
+        /* width: 100%; */
+    }
 }
-
+@media (max-width:768px) {
+    .section__container{
+        width: 90%;
+    }
+    .section1, .section2, .section3{
+        padding: 10px 15px;
+    }
+    .footerimage__container img {
+        width: 110%; 
+    }
+}
 
 @media (max-width: 430px) {
     .footer__logosection{
@@ -126,9 +140,12 @@
         width: 100%;
         display:flex;
         align-items: center;
+        margin: 20px 0px;
     }
     .footerimage__container img {
-        max-width: 120px; 
+        width: 100%; 
+        height: auto;
+        
     }
     .section1{
         width: 100%;
@@ -140,6 +157,10 @@
     .section1 h2,.section2 h2,.section3 h2{
         font-size: 1.3rem;
         color: var(--secondary-color);
+        padding-left: 15px;
+    }
+    .section1 p,.section2 p,.section3 p{
+        padding-left: 15px;
     }
     .footer__container{
         padding-left: 15px;
@@ -152,6 +173,13 @@
     }
     .footer__socialLogoConatiner img{
         width: 100%;
+    }
+    .hr hr{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .copywrite{
+        width: 92%;
     }
 }
 
