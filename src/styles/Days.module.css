@@ -81,6 +81,7 @@
   .days__content {
     width: 100%;
     padding: 5px;
+    height: auto;
     justify-content: space-between;
   }
 
@@ -109,6 +110,7 @@
     width: 90%;
     padding: 3px;
     margin: 4px 0px;
+    height: fit-content;
   }
   .days__logoCal {
     height: 28px;
@@ -121,5 +123,11 @@
   .days__name {
     font-size: 0.85rem;
     margin-top: 5px;
+  }
+  .day__name p{
+    font-size: 0.9rem;
+  }
+  .day__name h4 {
+    font-size: 0.6rem;
   }
 }
