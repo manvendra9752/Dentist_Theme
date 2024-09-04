@@ -48,8 +48,8 @@ const Testimonial = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    // autoplaySpeed: 2500,
+    autoplay: true,
+    autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 768,
@@ -79,7 +79,7 @@ const Testimonial = () => {
                     <div className={styles.testimonial__content}>
                       <p>{testimonial.text}</p>
                       <div className={styles.name__designation}>
-                        <h3>{testimonial.name}</h3>
+                        <h4>{testimonial.name}</h4>
                         <i>{testimonial.designation}</i>
                       </div>
                     </div>
@@ -93,7 +93,7 @@ const Testimonial = () => {
                     <div className={styles.testimonial__content}>
                       <p>{testimonial.text}</p>
                       <div className={styles.name__designation}>
-                        <h3>{testimonial.name}</h3>
+                        <h4>{testimonial.name}</h4>
                         <i>{testimonial.designation}</i>
                       </div>
                     </div>

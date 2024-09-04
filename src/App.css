@@ -7,7 +7,10 @@ h1 {
   /* text-align: c; */
 }
 h3 {
-
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 4px;
+  border-radius: 4px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: small;
