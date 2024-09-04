@@ -23,7 +23,7 @@ function App() {
       <Businesshour />
       <Testimonial />
       <Formfetch />
-      <Footer />
+       <Footer />
     </>
   );
 }

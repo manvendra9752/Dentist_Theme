@@ -33,7 +33,7 @@ const Formfetch = () => {
             </div>
           </div>
           <div className={styles.image__container}>
-            <img src={data.img}></img>
+            <img src={data.img} alt=""></img>
           </div>
         </div>
       </div>
