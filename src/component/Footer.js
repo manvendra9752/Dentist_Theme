@@ -1,34 +1,34 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const data = {
     section1: {
-      img: require("../images/logo1.png")
+      img: require("../images/logo1.png"),
     },
     section2: {
       h1: "UTILITY PAGES",
       p1: "About",
-      p2: "Serives"
+      p2: "Serives",
     },
     section3: {
       h1: "EXTRA LINKS",
       p1: "Privacy Policy",
-      p2: "Terms & Conditions"
+      p2: "Terms & Conditions",
     },
     section4: {
       h1: "CONTACT US",
       p1: "E-mail",
       p2: "Phone",
-      p3: "Address"
+      p3: "Address",
     },
     copywrite: {
       p1: "Dental",
-      p2: `Copyright © ${currentYear}. All rights reserved`
-    }
-
-  }
+      p2: `Copyright © ${currentYear}. All rights reserved`,
+    },
+  };
   const socialmedia = [
     {
       image: require("../images/facebook.png"),
@@ -55,11 +55,23 @@ const Footer = () => {
             <div className={styles.footer__socialLogoConatiner}>
               {socialmedia.map((media, index) => (
                 <a key={index} href={media.url}>
-                  <img src={media.image} alt="logoimages" />
+                  {/* <motion.div
+className="container"
+whileHover={{ scale: 1.2, rotate: 90 }}
+whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
+/> */}
+                  <motion.img
+                    src={media.image}
+                    className="container"
+                    whileHover={{ scale: 1.2, rotate: 90 }}
+                    whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
+                    alt="logoimages"
+                  />
                 </a>
               ))}
             </div>
           </div>
+
           <div className={styles.section2}>
             <h2>{data.section2.h1}</h2>
             <p>{data.section2.p1}</p>
@@ -72,10 +84,10 @@ const Footer = () => {
           </div>
           <div className={styles.section1}>
             <div>
-              <h2>{ data.section4.h1}</h2>
-              <p>{data.section4.p1 }</p>
-              <p>{ data.section4.p2}</p>
-              <p>{ data.section4.p3}</p>
+              <h2>{data.section4.h1}</h2>
+              <p>{data.section4.p1}</p>
+              <p>{data.section4.p2}</p>
+              <p>{data.section4.p3}</p>
             </div>
           </div>
         </div>
@@ -84,7 +96,7 @@ const Footer = () => {
         </div>
         <div className={styles.copywrite}>
           <p>{data.copywrite.p1}</p>
-          <p>{ data.copywrite.p2}</p>
+          <p>{data.copywrite.p2}</p>
         </div>
       </div>
     </>

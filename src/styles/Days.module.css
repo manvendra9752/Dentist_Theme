@@ -99,9 +99,11 @@
   }
   .day__name p{
     font-size: 1rem;
+    /* text-align: center; */
   }
   .day__name h4 {
     font-size: 0.8rem;
+    /* text-align: center; */
   }
 }
 
