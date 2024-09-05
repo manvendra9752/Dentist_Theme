@@ -59,3 +59,30 @@ p {
   }
 }
 
+button {
+  padding: 1rem 1.2rem;
+  width: fit-content;
+  color: var(--secondary-color);
+  border-radius: 30px;
+  background-color: var(--primary-color);
+  border: none;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  margin-top: 1rem;
+}
+@media (max-width: 850px) {
+  button {
+    height: 2.5rem;
+    font-size: medium;
+  }
+
+}
+@media (max-width: 1200px) {
+  button {
+    height: 3.2rem;
+    font-size: medium;
+  }
+}

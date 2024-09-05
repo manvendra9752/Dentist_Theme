@@ -2,7 +2,6 @@
   width: 90%;
   max-width: 1300px;
   margin: auto;
-  /* background-color: #F9FBFB; */
   box-sizing: border-box;
 }
 .arr {
@@ -52,7 +51,7 @@
 }
 .btn {
   padding: 1rem 1.2rem;
-  color: white;
+  color: var(--secondary-color);
   border-radius: 30px;
   background-color: var(--primary-color);
   border: none;
@@ -151,11 +150,8 @@
   .textdata h3{
     margin: auto;
   }
-  .about_main {
-  }
   
  .textdata h1{
-    /* margin: auto; */
     margin-top: 0.2rem;
     margin-bottom: 0.2rem;
     text-align: center;

@@ -216,7 +216,7 @@
 }
 
 .appointment__btn__container {
-  width: 80%;
+  /* width: 80%; */
   margin-top: 6%;
   display: flex;
   justify-content: center;
@@ -237,7 +237,7 @@
 
 .appointment__date,
 .appointment__hour {
-  width: 65%;
+  width: 90%;
   margin-top: 2%;
   display: flex;
   flex-direction: column;
@@ -327,8 +327,6 @@
   /*-------------------- business hours styling ------------------------*/
   .img__container {
     width: 40%;
-    padding-right: 0%;
-    /* padding-left: 1rem; */
   }
   .img__container img {
     width: 90%;
@@ -355,8 +353,8 @@
   }
   .appointment__calendar__container {
     width: 50%;
-    justify-content: center;
-    padding-left: 2rem;
+    justify-content: start;
+    /* padding-left: 2rem; */
   }
   .appointment__calendar {
     width: 85%;
