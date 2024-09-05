@@ -33,14 +33,22 @@ h3 {
   }
 
 }
-button:hover{
-  scale: 1.1;
-  transition: 300ms;
+button {
+  border: 1px solid transparent; /* Initial border color */
+  background-color: var(--primary-color); /* Initial background color */
+  color: white; /* Initial text color */
+  transition: transform 300ms ease-in-out, border 300ms ease-in-out, background-color 300ms ease-in-out, color 300ms ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  transform: scale(1.1);
   border: 1px solid var(--primary-color);
   background-color: white;
   color: var(--primary-color);
-  cursor: pointer;
 }
+
 /* Paragraph styling */
 p {
   font-size: 1rem;

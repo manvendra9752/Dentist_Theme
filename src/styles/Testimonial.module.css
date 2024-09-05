@@ -11,6 +11,9 @@ h4{
   width: fit-content;
 }
 
+.slick-arrow {
+  display: none;
+}
 .section1 h1 {
   width: 80%;
   margin: 1rem 0;

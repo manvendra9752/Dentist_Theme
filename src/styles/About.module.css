@@ -94,9 +94,6 @@
 }
 
 @media (max-width: 1024px) {
-  .about {
-    /* padding: 1rem 1rem; */
-  }
   .sub_content h4 {
     font-size: 1.4rem;
   }
