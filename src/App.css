@@ -33,7 +33,14 @@ h3 {
   }
 
 }
-
+button:hover{
+  scale: 1.1;
+  transition: 300ms;
+  border: 1px solid var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+  cursor: pointer;
+}
 /* Paragraph styling */
 p {
   font-size: 1rem;

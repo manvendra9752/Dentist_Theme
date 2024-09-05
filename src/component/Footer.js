@@ -63,8 +63,9 @@ whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
                   <motion.img
                     src={media.image}
                     className="container"
-                    whileHover={{ scale: 1.2, rotate: 90 }}
-                    whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
+                    whileHover={{ scale: 1.2, rotate: 360 }}
+                    whileTap={{ scale: 0.8, rotate: -360, borderRadius: "100%" }}
+                    transition={{delay:0.2, duration:0.5}}
                     alt="logoimages"
                   />
                 </a>
