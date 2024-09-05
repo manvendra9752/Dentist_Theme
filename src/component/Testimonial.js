@@ -45,11 +45,12 @@ const Testimonial = () => {
   const settings = {
     dots: false,
     infinite: true,
+    prevArrow:false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    arrow: false,
+    arrows: false,
     autoplaySpeed: 2500,
     responsive: [
       {

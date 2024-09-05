@@ -173,6 +173,9 @@
   justify-content: center;
   width: 33%;
 }
+.appointment__calendar__container button{
+   box-shadow: none;
+}
 
 .appointment__datetime__content {
   width: 32%;

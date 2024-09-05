@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Businesshour.module.css";
 import Days from "./Days";
 import { Calendar } from "@natscale/react-calendar";
-import appointmentimg from "../images/appointmentimg.png";
+// import appointmentimg from "../images/appointmentimg.png";
 
 const Businesshour = () => {
   const hours = [
