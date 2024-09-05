@@ -14,9 +14,9 @@ const Formfetch = () => {
         <div className={styles.form__background}>
           <div className={styles.form__details}>
             <div className={styles.heading__text}>
-              <h3>{ data.h3}</h3>
-              <h1>{ data.h1}</h1>
-              <p>{ data.p}</p>
+              <h3>{data.h3}</h3>
+              <h1>{data.h1}</h1>
+              <p>{data.p}</p>
             </div>
             <div className={styles.form}>
               <form className={styles.forminput}>

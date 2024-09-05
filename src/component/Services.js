@@ -13,6 +13,8 @@ import { IoArrowBackCircleOutline } from "react-icons/io5";
 import teeth_1 from "../images/teeth1.png";
 import teeth_2 from "../images/teeth2.png";
 import teeth_3 from "../images/teeth3.png";
+
+import { motion } from "framer-motion";
 // Define the content array with unique keys for each item
 const main_para = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula aenean massa."
 const content = [
@@ -91,7 +93,8 @@ const Services = () => {
 
   return (
     <>
-      <div className={styles.services}>
+      <div
+        className={styles.services}>
         <div className={styles.main_data}>
           <h3>Our Services</h3>
           <h1>Service</h1>
