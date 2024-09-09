@@ -239,3 +239,24 @@
     gap: 5px;
   }
 }
+@keyframes dropdown {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Add animation to dropdown */
+.menuList.open {
+  animation: dropdown 0.5s ease-in-out forwards;
+}
+.icon {
+  margin: auto;
+  margin-right: 8px;
+  padding-top: 3%;
+  font-size: 20px;
+}

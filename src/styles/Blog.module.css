@@ -1,20 +1,18 @@
-/* General Reset */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Container for services */
 .services {
     width: 100%;
     height: fit-content;
     max-width: 1300px;
     margin: auto;
-    overflow: hidden; /* Hide overflow to prevent scrollbars */
+    overflow: hidden;
 }
 
-/* Styles for the slider container */
 .slider {
     width: 100%;
     position: relative;

@@ -24,8 +24,7 @@
   font-size: 2rem;
   background: none;
   color: var(--accent-color);
-  /* position: relative; */
-  padding:0%;
+  padding: 0%;
   border: none;
   background: none;
   box-shadow: none;
@@ -36,12 +35,12 @@
 }
 
 .nextarrow:hover,
-.prevarrow:hover{
-    scale: 1.2;
-    transition: 300ms;
-    color: var(--accent-color);
-    background:none;
-    border: none;
+.prevarrow:hover {
+  scale: 1.2;
+  transition: 300ms;
+  color: var(--accent-color);
+  background: none;
+  border: none;
 }
 
 .slick-slide {
@@ -89,7 +88,7 @@
 }
 
 .arrow:hover {
-  color: var(--highlight-color); /* Optional: Highlight color on hover */
+  color: var(--highlight-color);
 }
 
 .services::-webkit-scrollbar {
@@ -124,6 +123,7 @@
   border: 1px solid var(--primary-color);
   padding: 4px;
   border-radius: 4px;
+  font-size: small;
 }
 
 .main_data h1 {
@@ -133,7 +133,7 @@
 }
 
 .services_1 {
-  flex: 0 0 300px; /* Adjust as needed */
+  flex: 0 0 300px;
   border: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
@@ -142,16 +142,16 @@
   border-radius: 5px;
   height: 100%;
   position: relative;
-  overflow: hidden; /* Ensure overflow is hidden to maintain clean layout */
+  overflow: hidden;
 }
 
 .services_1 img {
   width: 95%;
   height: auto;
   margin: auto;
-  aspect-ratio: 1 / 0.9; /* Ensure the image is square */
-  max-height: 50%; /* Ensure height does not exceed half of the card height */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  aspect-ratio: 1 / 0.9;
+  max-height: 50%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
@@ -163,12 +163,12 @@
   bottom: 0.5%;
   padding: 0.8rem;
   height: fit-content;
-  /* margin-bottom: auto; */
   left: 2.7%;
   border-radius: 10px;
   box-shadow: 0.1px 1px 5px 0.1px;
   background-color: white;
 }
+
 .content_1 p {
   padding-top: 0.5rem;
 }
@@ -185,8 +185,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 0.2rem 0 0.2rem; */
-  /* padding: 0 0.7rem; */
 }
 
 .content_heading img {
@@ -205,6 +203,7 @@
   color: var(--primary-color);
   padding: 0rem;
   box-shadow: none;
+  height: fit-content;
   margin: 0px;
   background: none;
   border: none;
@@ -214,10 +213,12 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .button1:hover {
   scale: 1.02;
   border: none;
 }
+
 .content_heading h2 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -251,9 +252,11 @@
   .services_1 {
     flex: 0 0 270px;
   }
+
   .content_heading h2 {
     font-size: 1rem;
   }
+
   .main_data p {
     width: 80%;
   }
@@ -280,27 +283,21 @@
   .services_1 h2 {
     font-size: 1rem;
   }
-
-  /* .button1 {
-        padding: 0.4rem 0.8rem;
-    } */
 }
 
 @media (max-width: 576px) {
   .services {
     padding: 0.2rem 0.5rem;
   }
+
   .main_data p {
     width: 95%;
   }
+
   .services_1 {
     flex: 0 0 80%;
     margin: 0.5rem 0;
   }
-
-  /* .button1 {
-        padding: 0.3rem 0.6rem;
-    } */
 
   .main_data p {
     width: 90%;

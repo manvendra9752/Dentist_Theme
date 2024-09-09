@@ -4,12 +4,10 @@
 }
 
 .days__content {
-  padding: 5px;
-  /* padding-bottom: 0px; */
+ 
   width: 30%;
   max-width: 39%;
   height: 50px;
-  /* padding: 12px; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;

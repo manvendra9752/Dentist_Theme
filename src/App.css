@@ -31,13 +31,13 @@ h3 {
   h1 {
     font-size: 1.6rem;
   }
-
 }
 button {
   border: 1px solid transparent; /* Initial border color */
   background-color: var(--primary-color); /* Initial background color */
   color: white; /* Initial text color */
-  transition: transform 300ms ease-in-out, border 300ms ease-in-out, background-color 300ms ease-in-out, color 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, border 300ms ease-in-out,
+    background-color 300ms ease-in-out, color 300ms ease-in-out;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -93,7 +93,6 @@ button {
     height: 2.5rem;
     font-size: medium;
   }
-
 }
 @media (max-width: 1200px) {
   button {
